@@ -1,6 +1,6 @@
 const checkMaxStringLength = (string, maxLength) => string.length <= maxLength;
 
-console.log(checkMaxStringLength('проверяемая строка', 20));
+checkMaxStringLength('проверяемая строка', 20);
 
 const isPolindrome = (string) => {
   const newString = string.replace(/ /g, '').toLowerCase();
@@ -13,7 +13,7 @@ const isPolindrome = (string) => {
   return newString === reversedString;
 };
 
-console.log(isPolindrome('Лёша на полке клопа нашёл '));
+isPolindrome('Лёша на полке клопа нашёл ');
 
 
 // const isPolindrome = (string) => {
@@ -27,4 +27,4 @@ const extractNumbers = (string) => Number(
 );
 // const extractNumbers = (string = '') => Math.abs(parseInt(string.replace(/\D+/g, ''), 10));
 
-console.log(extractNumbers('vgb2023!1fg'));
+extractNumbers('vgb2023!1fg');
