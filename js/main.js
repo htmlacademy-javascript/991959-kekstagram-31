@@ -1,4 +1,4 @@
 import {getPost} from './data.js';
+import {renderThumbnails} from './thumbnails.js';
 
-// console.log(getPost());
-getPost();
+renderThumbnails(getPost());
